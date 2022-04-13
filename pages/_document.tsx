@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html lang="en" className="antialiased">
       <Head>
-        <meta content="#da532c" name="theme-color" />
+        <meta content="#f5f7fa" name="theme-color" />
         <meta content="#ffffff" name="msapplication-TileColor" />
         <meta
           content="/favicons/browserconfig.xml"
@@ -30,7 +30,7 @@ export default function Document() {
           type="image/png"
         />
         <link
-          color="#5bbad5"
+          color="#ffffff"
           href="/favicons/safari-pinned-tab.svg"
           rel="mask-icon"
         />
