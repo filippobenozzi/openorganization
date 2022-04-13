@@ -86,7 +86,7 @@ export default function Index() {
         </nav>
         <section className="max-w-lg p-8 mx-auto pb-8 md:pb-20">
           <h1 className="mb-4 text-4xl md:text-5xl font-bold tracking-tight !leading-[1.25]">
-            We fund research and development aiming to build open models for <span className="inline bg-[#dad4ec]">decentralize sustainable organizations</span>
+            We fund research and development aiming to build open models and principles for <span className="inline bg-[#dad4ec]">decentralize sustainable organizations</span>
           </h1>
           <p className="text-gray-700 max-w-md text-lg pt-6 mb-4 italic">
             Not finance. Not strategy. Not technology.<br />It is the teamwork that remains the ultimate competitive advantage, both because it is so powerful and so rare.
@@ -97,16 +97,16 @@ export default function Index() {
       </header>
       <main>
         <section className="m-auto max-w-lg mt-8 px-8 md:px-14 py-4 md:py-12">
-          <h2 className="mb-4 text-xl md:text-2xl font-bold tracking-tight">
+          <h2 className="mb-6 text-xl md:text-2xl font-bold tracking-tight">
             Create an <span className="inline px-1 bg-[#dad4ec]">open source culture</span>, that drive innovation and sustainability.
           </h2>
-          <p className="text-gray-700 mb-2">
+          <p className="text-gray-700 mb-4 line leading-7">
           Today we are seeing the rapid rise of agile organizations that quickly and effectively adapting to the market new ideas with a large scale impact. These companies tend to have something in common: they are drive by talented leaders that encourage the team in order to release their full potential.
           </p>
-          <p className="text-gray-700 mb-2">
+          <p className="text-gray-700 mb-4 leading-7">
             These organisations are driven by an open culture that facilitate and encourage talented employees to develop their skills, this “flow” let shift employees where they can add the most value based on their talents and skills.
           </p>
-          <p className="text-gray-700 mb-2">
+          <p className="text-gray-700 mb-4 leading-7">
             Management guru like Peter Drucker famously said “Culture Eats Strategy for breakfast”. Usually companies define their cultural values put them in a PowerPoint and share it. In the best case scenario they print posters with their values and send them to all the offices. But, culture is a living, an ever shifting organism that need to be fed, watered and taken care of.
           </p>
         </section>
@@ -124,8 +124,8 @@ export default function Index() {
               />
             </div>
             <div className="w-full">
-              <p className="text-gray-700 mt-4 text-sm md:text-lg">
-                <strong>Filippo Benozzi</strong> –– developer, economic student and musician.
+              <p className="text-gray-700 mt-4">
+                <strong>Filippo Benozzi</strong> <span className='text-sm italic'>— developer, economic student and musician</span>
               </p>
               <a
                 href="https://filippo.im"

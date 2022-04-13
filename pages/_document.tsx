@@ -4,6 +4,20 @@ export default function Document() {
   return (
     <Html lang="en" className="antialiased">
       <Head>
+        <link
+          rel="preload"
+          href="/fonts/ibm-plex-sans-var.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="/fonts/ibm-plex-sans-var-italic.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
         <meta content="#f8fafc" name="theme-color" />
         <meta content="#ffffff" name="msapplication-TileColor" />
         <meta
