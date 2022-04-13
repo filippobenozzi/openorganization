@@ -46,7 +46,7 @@ const ProListItem = ({ children }) => (
 
 export default function Index() {
   const meta = {
-    title: 'Open Organization - ',
+    title: 'Open Organization',
     description: `We fund and nurtures research and development aiming to build open models for decentralize sustainable organizations`,
     image: 'https://openorganization.org/og.png'
   };
@@ -54,7 +54,7 @@ export default function Index() {
   return (
     <>
       <Head>
-        <title>{meta.title}</title>
+        <title>{meta.title} | {meta.description}</title>
         <meta name="robots" content="follow, index" />
         <meta content={meta.description} name="description" />
         <meta property="og:url" content={`https://openorganization.org`} />
@@ -92,6 +92,7 @@ export default function Index() {
             Not finance. Not strategy. Not technology.<br />It is the teamwork that remains the ultimate competitive advantage, both because it is so powerful and so rare.
             <br /><span className="text-sm">— Patrick Lencioni, The Five Dysfunctions of a Team: A Leadership Fable</span>
           </p>
+          <a href="mailto:hi@openorganization.org" className="font-bold inline-block mt-4 w-auto italic transition border-b-2 border-[#bdc2e8] hover:border-[#cd9cf2]">Join us</a>
         </section>
       </header>
       <main>
