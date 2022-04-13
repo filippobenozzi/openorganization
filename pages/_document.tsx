@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html lang="en" className="antialiased">
       <Head>
-        <meta content="#f5f7fa" name="theme-color" />
+        <meta content="#f8fafc" name="theme-color" />
         <meta content="#ffffff" name="msapplication-TileColor" />
         <meta
           content="/favicons/browserconfig.xml"
