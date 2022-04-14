@@ -77,16 +77,16 @@ export default function Index() {
       </Head>
       <header className="bg-gray-50">
         <div className="h-2 w-full bg-gradient-to-r from-[#cd9cf2] from-[#f5f7fa] to-[#dad4ec]" />
-        <nav className="max-w-lg px-8 py-4 md:py-8 mx-auto my-4 md:my-8 flex justify-between">
+        <nav className="max-w-lg px-8 py-4 md:py-8 mx-auto mb-4 mt-14 flex justify-between">
           <Link href="/">
             <a>
-              <img className="w-56" alt="React 2025" src="/logo.svg" />
+              <img className="w-56" alt="Open Organization" src="/logo.svg" />
             </a>
           </Link>
         </nav>
         <section className="max-w-lg p-8 mx-auto pb-8 md:pb-20">
           <h1 className="mb-4 text-4xl md:text-5xl font-bold tracking-tight !leading-[1.25]">
-            We fund research and development aiming to build open models and principles for <span className="inline bg-[#dad4ec]">decentralize sustainable organizations</span>
+            We fund research and development to build open models and principles for <span className="inline bg-[#dad4ec]">decentralize sustainable organizations</span>
           </h1>
           <p className="text-gray-700 max-w-md text-lg pt-6 mb-4 italic">
             Not finance. Not strategy. Not technology.<br />It is the teamwork that remains the ultimate competitive advantage, both because it is so powerful and so rare.
