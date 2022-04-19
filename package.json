@@ -9,7 +9,6 @@
   },
   "license": "MIT",
   "scripts": {
-    "postbuild": "NODE_OPTIONS='--experimental-json-modules' node ./scripts/generate-rss.mjs && node ./scripts/generate-sitemap.mjs",
     "develop": "next",
     "build": "next build",
     "start": "next start",
