@@ -1,0 +1,42 @@
+---
+title: 'Iliad data usage widget'
+publishedAt: '2021-06-19'
+description: 'This script will create a widget showing the data usage of your Iliad plan.'
+tags: '#apple,#scriptable'
+---
+
+This script will create a widget showing the data usage of your Iliad plan, an Italian data plan mobile phone provider, using [Scriptable for iOS](https://apps.apple.com/us/app/scriptable/id1405459188?ign-mpt=uo%3D4).
+
+**Update v1.1** *(2022.07.16)*: changed the DOM selector to match the new website.<br />
+**Update v1.0** *(2021.06.19)*: initial release.
+
+<div className="flex justify-center">
+  <Image
+    alt={`widget iliad preview`}
+    src={`/static/images/snippets/scriptable-iliad-widget.png`}
+    width={400}
+    height={150}
+    objectFit={`contain`}
+  />
+</div>
+
+## Usage
+
+<Step number={1} title="Download the script" />
+
+Download the script from [here](https://gist.githubusercontent.com/filippobenozzi/533458484091c826d04351f9f2bda4ad/raw/8c7e049aa5da4efb9d08ccf166415bff1d6245bc/IliadDataUsage.js), and import into the Scriptable App.
+
+<Step number={2} title="Iliad credentials" />
+
+Add your Iliad credentials in the first lines of the script, the same that you use to access to the Iliad web portal.
+
+```js
+const USERNAME = '<YOUR-USERNAME>';
+const PASSWORD = '<YOUR-PASSWORD>';
+```
+
+<Step number={3} title="Add the widget to your homescreen 🎉" />
+
+---
+
+*In order to use this script you need to have installed [Scriptable for iOS](https://apps.apple.com/us/app/scriptable/id1405459188?ign-mpt=uo%3D4).*

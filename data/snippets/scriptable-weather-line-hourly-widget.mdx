@@ -1,0 +1,61 @@
+---
+title: 'Weather Line hourly widget'
+publishedAt: '2021-05-25'
+description: 'Weather Line inspired widget made with Scriptable for iOS.'
+tags: '#apple,#scriptable'
+---
+
+Weather Line inspired widget made with Scriptable for iOS.
+
+<div className="flex justify-center">
+  <Image
+    alt={`widget preview`}
+    src={`/static/images/snippets/scriptable-weather-line.png`}
+    width={400}
+    height={150}
+    objectFit={`contain`}
+  />
+</div>
+
+## Usage
+
+<Step number={1} title="Download the script" />
+
+Download the script from [here](https://gist.github.com/filippobenozzi/1a5fecde94cc980a928c61f0f41ddf5c), and import into the Scriptable App.
+
+<Step number={2} title="Create Openweather account and get the API key" />
+
+Create an [Openweather account](https://openweathermap.org/). Then from the [API page](https://home.openweathermap.org/api_keys), retrieve your API key.
+
+
+<Step number={3} title="Add the location parameter" />
+
+Modify the first lines of the script with your location latitude and longitude, your location name that you can retrieve by searching [here](https://openweathermap.org/).
+
+```js
+// Widget Params
+// Don't edit this, those are default values for debugging (location for Cupertino).
+// You need to give your locations parameters through the widget params, more info below.
+const widgetParams = JSON.parse((
+                  args.widgetParameter != null) ?
+                  args.widgetParameter : '{ "LAT" : "45.5736" , "LON" : "12.1061" , "LOC_NAME" : "Scorzé" }')
+
+// Dimension
+// Widget size 
+// If size_large = true the widget will be big otherwise small
+const size_large = true;
+
+// WEATHER API PARAMETERS !important
+// API KEY, you need an Open Weather API Key
+// You can get one for free at: https://home.openweathermap.org/api_keys (account needed).
+const API_KEY = "your_key_here"
+```
+
+<Step number={4} title="Add the script to Scriptable" />
+
+Add the modified script to your Scriptable app.
+You can choose the size of the widget when you add the Scriptable widget to your homescreen.
+
+---
+
+*In order to use this script you need to have installed [Scriptable for iOS](https://apps.apple.com/us/app/scriptable/id1405459188?ign-mpt=uo%3D4).*

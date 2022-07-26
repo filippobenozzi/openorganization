@@ -4,11 +4,11 @@ import { NextResponse } from 'next/server';
 export function middleware(req: NextRequest, ev: NextFetchEvent) {
   const ContentSecurityPolicy = `
     default-src 'self';
-    script-src 'self' 'unsafe-eval' 'unsafe-inline' *.youtube.com *.twitter.com cdn.usefathom.com *.fpp.li;
+    script-src * blob: data: 'self' 'unsafe-eval' 'unsafe-inline' *.youtube.com *.twitter.com cdn.usefathom.com *.fpp.li;
     child-src *.youtube.com *.google.com *.twitter.com *.fpp.li;
     style-src 'self' 'unsafe-inline' *.googleapis.com *.fpp.li;
     img-src * blob: data:;
-    media-src 'none';
+    media-src * blob: data:;
     connect-src *;
     font-src 'self';
   `;

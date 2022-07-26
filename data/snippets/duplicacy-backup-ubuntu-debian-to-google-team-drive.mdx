@@ -1,0 +1,99 @@
+---
+title: 'Backup Ubuntu/Debian server using Duplicacy to Google Shared Drive'
+publishedAt: '2022-05-18'
+description: 'Backup your folders and files to Google Drive, Dropbox, S3 etc. using Duplicacy with Web GUI on Ubuntu or Debian. This article will show you how to do it.'
+tags: '#server,#opensource'
+---
+
+Backup of a computer system is very important as it can prevent you from data loss in case of system failure. [Duplicacy](https://duplicacy.com/) is an open-source data backup tool that provides encrypted, digitally signed, and versioned local or remote backup of files.
+
+I used Duplicacy everywhere (*even on my Synology*) for backup my data to a Google Team Drive as It's super easy to configure and super cheap (*20$ first year purchase and 5$ for renew each year*), also is fully configurable with Google Shared Team Drive and S3 compatible server (*Minio in my case*).
+
+In this article, I will discuss how to install and use Duplicacy in Ubuntu/Debian and backup on a Google Shared Team Drive.
+
+## Features of Duplicacy
+
+The key features of Duplicacy data backup software are:
+- Relatively easy to automate backup
+- Web interface for easy configuration
+- Encrypts and compresses your backups by default
+- Takes incremental backups
+- Allows incremental restoration from backups
+- Supports multiple different protocols
+- It can self-heal if a backup goes wrong
+- Supports a lot of destination as well as AWS S3 or compatible, Google Drive, Dropbox, etc. (*see [here](https://github.com/gilbertchen/duplicacy#storages) all the available destinations*)
+
+*The full list of feature are available on their website [here](https://duplicacy.com/).*
+
+## How to install Duplicacy Web on Ubuntu/Debian
+
+Use the following command to download the latest version of the package (*copy the link of the package from [here](https://duplicacy.com/download.html) based on your linux installation*):
+
+```bash
+mkdir ~/duplicacy
+wget -O ~/duplicacy/duplicacy [link from above]
+```
+
+Next give to your downloaded executable file the following permissions:
+
+```bash
+chmod +x ~/duplicacy/duplicacy
+```
+
+Now Duplicacy is ready to be used, follow the next step if you want to know how to run it as system service and access it from the web.
+
+## How to auto-run Duplicacy as a system service
+
+Using these steps you will be able to run Duplicacy as a system service, and then access it from the web using the IP address of your machine.
+
+First, run the following command to create the service in the right directory:
+
+```bash
+sudo nano /etc/systemd/system/duplicacy.service
+```
+
+Then past inside the following content, be sure to specify your local user and the directory where the Duplicacy executable is located (*I used the root user for this tutorial, but I highly suggest you to change it*):
+
+```bash
+[Unit]
+Description=Duplicacy Backup
+
+Wants=network.target
+After=syslog.target network-online.target
+
+[Service]
+Type=simple
+ExecStart=/root/duplicacy/duplicacy
+WorkingDirectory=/root/.duplicacy-web/
+User=root
+Restart=on-failure
+RestartSec=10
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target
+```
+
+Then we need to be able to access Duplicacy from the internet, so we need to add the following pre-config file in our user directory:
+
+```bash
+mkdir ~/duplicacy-web
+nano ~/.duplicacy-web/settings.json
+```
+
+Then paste the following content:
+
+```bash
+{
+    "listening_address": "0.0.0.0:3875"
+} 
+```
+
+Then we can run the service using the following command:
+
+```bash
+sudo systemctl enable duplicacy
+sudo systemctl start duplicacy
+```
+
+You should be able to reach you Duplicacy web interface using machine your IP address, followed by the port *3875*.
