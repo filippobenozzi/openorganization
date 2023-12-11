@@ -79,9 +79,7 @@ export default function Index() {
         <div className="h-2 w-full bg-gradient-to-r from-[#cd9cf2] from-[#f5f7fa] to-[#dad4ec]" />
         <nav className="max-w-lg px-8 py-4 md:py-8 mx-auto mb-4 mt-14 flex justify-between">
           <Link href="/">
-            <a>
-              <img className="w-56" alt="Open Organization" src="/logo.svg" />
-            </a>
+            <img className="w-56" alt="Open Organization" src="/logo.svg" />
           </Link>
         </nav>
         <section className="max-w-lg p-8 mx-auto pb-8 md:pb-20">
@@ -92,11 +90,11 @@ export default function Index() {
             Not finance. Not strategy. Not technology.<br />It is the teamwork that remains the ultimate competitive advantage, both because it is so powerful and so rare.
             <br /><span className="text-sm">— Patrick Lencioni, The Five Dysfunctions of a Team: A Leadership Fable</span>
           </p>
-          <a href="mailto:hi@openorganization.org" className="font-bold inline-block mt-4 w-auto italic transition border-b-2 border-[#bdc2e8] hover:border-[#cd9cf2]">Join us</a>
+          <Link href="mailto:email@openorganization.org" className="font-bold inline-block mt-4 w-auto italic transition border-b-2 border-[#bdc2e8] hover:border-[#cd9cf2]">Join us</Link>
         </section>
       </header>
       <main>
-        <section className="m-auto max-w-lg mt-8 px-8 md:px-14 py-4 md:py-12">
+        <section className="m-auto max-w-lg mt-8 px-8 py-4 md:py-12">
           <h2 className="mb-6 text-xl md:text-2xl font-bold tracking-tight">
             Create an <span className="inline px-1 bg-[#dad4ec]">open source culture</span>, that drive innovation and sustainability.
           </h2>
@@ -113,19 +111,9 @@ export default function Index() {
         <span className="flex m-auto max-w-lg bg-gray-100 h-[1px] w-full" />
         <section className="m-auto max-w-lg mt-4 mb-16 px-8 md:px-14 py-4 md:py-12">
           <div className="flex items-center mt-6">
-            <div className="mr-6">
-              <Image
-                alt="Headshot of Filippo Benozzi"
-                src={avatar}
-                placeholder="blur"
-                width={72}
-                height={72}
-                className="rounded-full"
-              />
-            </div>
             <div className="w-full">
               <p className="text-gray-700 mt-4">
-                <strong>Filippo Benozzi</strong> <span className='text-sm italic'>— developer, economic student and musician</span>
+                <strong>Filippo Benozzi</strong> <span className='text-sm italic'>— developer, economic student</span>
               </p>
               <a
                 href="https://filippo.im"

@@ -1,10 +1,10 @@
 {
-  "name": "open",
+  "name": "openorganization.org",
   "description": "",
   "private": true,
   "author": {
     "name": "Filippo Benozzi",
-    "email": "me@filippo.im",
+    "email": "email@filippo.im",
     "url": "https://filippo.im"
   },
   "license": "MIT",
@@ -15,25 +15,14 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "^12.1.5",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "tailwindcss": "^3.0.24"
-  },
-  "devDependencies": {
-    "@types/node": "^17.0.25",
-    "@types/react": "^18.0.5",
-    "autoprefixer": "^10.4.4",
-    "eslint": "8.13.0",
-    "eslint-config-next": "12.1.5",
+    "next": "^14.0.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "autoprefixer": "^10.4.16",
+    "@types/node": "20.10.0",
+    "@types/react": "18.2.38",
     "postcss": "^8.4.12",
-    "prettier": "^2.6.2",
-    "typescript": "^4.6.3"
-  },
-  "prettier": {
-    "arrowParens": "always",
-    "singleQuote": true,
-    "tabWidth": 2,
-    "trailingComma": "none"
+    "tailwindcss": "^3.3.5",
+    "typescript": "5.3.2"
   }
 }
