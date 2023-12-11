@@ -109,7 +109,7 @@ export default function Index() {
           </p>
         </section>
         <span className="flex m-auto max-w-lg bg-gray-100 h-[1px] w-full" />
-        <section className="m-auto max-w-lg mt-4 mb-16 px-8 md:px-14 py-4 md:py-12">
+        <section className="m-auto max-w-lg mt-4 mb-16 px-8 py-4 md:py-12">
           <div className="flex items-center mt-6">
             <div className="w-full">
               <p className="text-gray-700 mt-4">
