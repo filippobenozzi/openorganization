@@ -3,19 +3,19 @@ import Head from 'next/head';
 
 export default function Index() {
   const meta = {
-    title: 'Open Organization',
-    description: `We fund and nurtures research and development aiming to build open models for decentralize sustainable organizations`,
-    image: 'https://openorganization.org/og.png'
+    title: 'Open Sustainable Organization',
+    description: `Research and development to build open models for open sustainable organizations`,
+    image: 'https://oso.sx/og.png'
   };
 
   return (
     <>
       <Head>
-        <title>{meta.title + " | " + meta.description}</title>
+        <title>{meta.title}</title>
         <meta name="robots" content="follow, index" />
         <meta content={meta.description} name="description" />
-        <meta property="og:url" content={`https://openorganization.org`} />
-        <link rel="canonical" href={`https://openorganization.org`} />
+        <meta property="og:url" content={`https://oso.sx`} />
+        <link rel="canonical" href={`https://oso.sx`} />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Filippo Benozzi" />
         <meta property="og:description" content={meta.description} />
@@ -29,7 +29,7 @@ export default function Index() {
         <script async defer
           data-website-id={process.env.NEXT_PUBLIC_UMAMI_DOMAIN_ID}
           src={`${process.env.NEXT_PUBLIC_UMAMI_HOST}/umami.js`}
-          data-domains="openorganization.org"
+          data-domains="oso.sx"
         />
       </Head>
       <header className="bg-gray-50">
@@ -41,29 +41,37 @@ export default function Index() {
         </nav>
         <section className="max-w-lg p-8 mx-auto pb-8 md:pb-20">
           <h1 className="mb-4 text-4xl md:text-5xl font-bold tracking-tight !leading-[1.25]">
-            We fund research and development to build open models and principles for <span className="inline bg-[#dad4ec]">decentralize sustainable organizations</span>
+            We research and develop frameworks and principles to build <span className="inline bg-[#dad4ec]">open sustainable organizations</span>
           </h1>
           <p className="text-gray-700 max-w-md text-lg pt-6 mb-4 italic">
-            Not finance. Not strategy. Not technology.<br />It is the teamwork that remains the ultimate competitive advantage, both because it is so powerful and so rare.
-            <br /><span className="text-sm">— Patrick Lencioni, The Five Dysfunctions of a Team: A Leadership Fable</span>
+            Framework, models and tools to build the next generation organization. Create an open culture, that drive innovation and sustainability.
           </p>
-          <Link href="mailto:email@openorganization.org" className="font-bold inline-block mt-4 w-auto italic transition border-b-2 border-[#bdc2e8] hover:border-[#cd9cf2]">Join us</Link>
+          <Link href="mailto:email@oso.sx" className="font-bold inline-block mt-4 w-auto italic transition border-b-2 border-[#bdc2e8] hover:border-[#cd9cf2]">Join us</Link>
         </section>
       </header>
       <main>
         <section className="m-auto max-w-lg mt-8 px-8 py-4 md:py-12">
           <h2 className="mb-6 text-xl md:text-2xl font-bold tracking-tight">
-            Create an <span className="inline px-1 bg-[#dad4ec]">open source culture</span>, that drive innovation and sustainability.
+            Manifesto
           </h2>
+          <p className="text-gray-700 mb-4 line leading-7">We are exploring the impact of open source principles on modern, innovative organizational cultures. Our goal is to gain a deeper insight into how these values shape today's business environment. Additionally, we are continuously refining the concept of an "open organization," clarifying how it differs from other management and leadership methodologies. We serve as a reliable guide for those looking to harness open principles to enhance their organizations.</p>
+          <p className="text-gray-700 mb-4 line leading-7">Openness is becoming a key factor in how teams of various sizes collaborate to achieve common objectives. Today's most progressive organizations, regardless of their mission, are adopting openness as a vital approach to success. They've observed that openness can lead to:</p>
           <p className="text-gray-700 mb-4 line leading-7">
-          Today we are seeing the rapid rise of agile organizations that quickly and effectively adapting to the market new ideas with a large scale impact. These companies tend to have something in common: they are drive by talented leaders that encourage the team in order to release their full potential.
+            <ul className="list-disc pl-4">
+              <li>Enhanced agility, with team members working more cohesively towards shared goals and visions.</li>
+              <li>Quicker innovation, as ideas from both inside and outside the organization are given fair consideration and prompt experimentation.</li>
+              <li>Increased engagement, with members understanding how their individual efforts align with the organization's overarching values, mission, and ethos.</li>
+            </ul>
           </p>
-          <p className="text-gray-700 mb-4 leading-7">
-            These organisations are driven by an open culture that facilitate and encourage talented employees to develop their skills, this “flow” let shift employees where they can add the most value based on their talents and skills.
-          </p>
-          <p className="text-gray-700 mb-4 leading-7">
-            Management guru like Peter Drucker famously said “Culture Eats Strategy for breakfast”. Usually companies define their cultural values put them in a PowerPoint and share it. In the best case scenario they print posters with their values and send them to all the offices. But, culture is a living, an ever shifting organism that need to be fed, watered and taken care of.
-          </p>
+          <p className="text-gray-700 mb-4 line leading-7">While each organization is distinct, we identify five fundamental characteristics that underpin openness in most scenarios: transparency, inclusivity, adaptability, collaboration, and community.</p>
+          <h3 className="mb-2 text-l font-bold leading-7">Transparency</h3>
+          <p className="text-gray-700 mb-4 line leading-7">In open organizations, transparency is key. They strive to make data and materials easily accessible within legal boundaries, allowing both internal and external participants to review them as needed, fostering inclusivity. Decision-making is transparent so that all affected parties understand the rationale and process behind them, inviting open assessment and collaboration. Work transparency ensures ongoing monitoring and assessment of projects, allowing for observation and potential modifications, emphasizing adaptability.</p>
+          <h3 className="mb-2 text-l font-bold leading-7">Inclusivity</h3>
+          <p className="text-gray-700 mb-4 line leading-7">Open organizations embrace diverse viewpoints, incorporating various perspectives into dialogues whenever possible. Participation is easy for interested parties and newcomers, without needing explicit permission from stakeholders, enhancing collaboration. Participation rules are clear and adhere to established standards, reinforcing transparency. The essence of open organizations is their communal nature. Shared values and purposes, rather than geographical locations or hierarchies, define participation and organizational boundaries. These core values, open to ongoing revision and critique, are crucial in determining the organization's success or failure, aligning closely with adaptability.</p>
+          <h3 className="mb-2 text-l font-bold leading-7">Adaptability</h3>
+          <p className="text-gray-700 mb-4 line leading-7">Flexibility and resilience define open organizations. Their policies and systems allow feedback loops to significantly influence operations, granting participants the ability to adjust their working conditions. Regular and detailed reporting on outcomes encourages adjustments in collective actions, aligned with continuous engagement and learning, and linked to transparency.</p>
+          <h3 className="mb-2 text-l font-bold leading-7">Sustainability</h3>
+          <p className="text-gray-700 mb-4 line leading-7">Open organization must embrace sustainability to achieve its objectives. This concept of sustainability encompasses sustainable development and business models, as well as the sustainable use of materials and operational practices. Establishing a corporate framework that supports sustainability is essential, not just in terms of physical resources and facilities, but also in management approaches, systems, and internal organization. This holistic approach to sustainability is crucial for the enduring success and longevity of the organization.</p>
         </section>
         <span className="flex m-auto max-w-lg bg-gray-100 h-[1px] w-full" />
         <section className="m-auto max-w-lg mt-4 mb-16 px-8 py-4 md:py-12">
