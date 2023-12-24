@@ -36,7 +36,7 @@ export default function Index() {
         <div className="h-2 w-full bg-gradient-to-r from-[#cd9cf2] from-[#f5f7fa] to-[#dad4ec]" />
         <nav className="max-w-lg px-8 py-4 md:py-8 mx-auto mb-4 mt-14 flex justify-between">
           <Link href="/">
-            <img className="w-56" alt="Open Organization" src="/logo.svg" />
+            <img className="w-24" alt="Open Organization" src="/logo.svg" />
           </Link>
         </nav>
         <section className="max-w-lg p-8 mx-auto pb-8 md:pb-20">
